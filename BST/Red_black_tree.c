@@ -171,7 +171,7 @@ void fix_up(node* cur){
         }
     }
 
-    root -> color = 0;
+    ROOT -> color = 0;
 }
 
 // left most child
@@ -270,9 +270,4 @@ void delete_node(node* delete){
     delete -> key = replace -> key;
     replace -> key = temp;
     delete_node(delete);
-}
-
-int main(){
-    ROOT = newNode(0);
-
 }
